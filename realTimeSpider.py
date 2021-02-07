@@ -47,8 +47,8 @@ def getData(isSplit):
                 # 当日电影总大盘
                 f"{json['boxOffice']['data']['nationalBox']['num']}{json['boxOffice']['data']['nationalBox']['unit']}",
                 # 爬取时间
-                # f"{json['boxOffice']['data']['updateInfo']['date']} {json['boxOffice']['data']['updateInfo']['time']}",
-                time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
+                f"{json['boxOffice']['data']['updateInfo']['date']} {json['boxOffice']['data']['updateInfo']['time']}",
+                # time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
             ]
             fCsv.writerow(row)
 
